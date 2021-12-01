@@ -2,7 +2,7 @@
 Just a readme file with necessary info to setup React Native project using TypeScript, eslint, prettier and babel
 
 Useful links:
-[How to setup RN project with eslint, prettier and etc.](https://dev-yakuza.posstree.com/en/react-native/eslint-prettier-husky-lint-staged/)
+[How to setup RN project with eslint, prettier and etc.](https://dev-yakuza.posstree.com/en/react-native/eslint-prettier-husky-lint-staged/)<br />
 [RN project TypeScript template](https://github.com/react-native-community/react-native-template-typescript)
 
 ## TODO:
@@ -21,4 +21,16 @@ Configure eslint according to your needs (dont forget to install needed dependen
 npx eslint --init
 ```
 
+Install prettier
+```
+yarn add prettier eslint-plugin-prettier
+```
 
+Add Prettier plugin to eslintrc.js
+```
+plugins: [..., 'prettier'],
+rules: {
+    ...,
+    "prettier/prettier": "error",
+  }
+```
